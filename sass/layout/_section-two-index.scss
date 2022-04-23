@@ -1,0 +1,27 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantage-list {
+    display: flex;
+}
+
+.advantage-list__item {
+    width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.advantage-list__icons {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--bcg-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

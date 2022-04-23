@@ -1,0 +1,80 @@
+.nav {
+    color: var(--title-nav-btn);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.current {
+    color: var(--hov-nav-contacts);
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--hov-nav-contacts);
+        border-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.contact-footer {
+    color: var(--footer-contacts);
+    font-style: normal;
+    display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--hov-nav-contacts);
+    }
+}
+
+.footer-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--mtitle-hovbtn);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--hov-nav-contacts);
+    }
+}
+
+.link {
+    display: flex;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--mtitle-hovbtn);
+    justify-content: center;
+    align-items: center;
+    fill: var(--team-links-hover);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--hov-nav-contacts);
+        fill: var(--mtitle-hovbtn);
+    }
+}
+

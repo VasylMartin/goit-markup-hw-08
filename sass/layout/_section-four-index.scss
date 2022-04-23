@@ -1,0 +1,37 @@
+.section-four {
+    background-color: var(--bcg-btn);
+}
+
+.team-list__cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.team-links {
+    display: flex;
+    width: 206px;
+}
+
+.team-links__li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list__item {
+    width: 270px;
+    height: 428px;
+    background-color: var(--mtitle-hovbtn);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+

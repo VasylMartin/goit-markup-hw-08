@@ -1,0 +1,15 @@
+.section-three {
+    padding-bottom: 94px;
+}
+
+.photo-list {
+    display: flex;
+}
+
+.photo-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.thumb {
+    position: relative;
+}

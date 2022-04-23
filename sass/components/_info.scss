@@ -1,0 +1,50 @@
+.card-info {
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.address {
+    color: var(--mtitle-hovbtn);
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.footer-title-link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--mtitle-hovbtn);
+    margin-bottom: 20px;
+}
+
+.overlay {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--mtitle-hovbtn);
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform 250ms linear;
+}
+
+.case-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--text);
+}

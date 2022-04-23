@@ -1,0 +1,38 @@
+.link-global-line {
+    text-decoration-line: none;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+}
+
+header {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    color: var(--text);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}

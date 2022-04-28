@@ -1,4 +1,4 @@
-.nav {
+.nav-list__link {
     color: var(--title-nav-btn);
     font-weight: 500;
     font-size: 14px;
@@ -8,6 +8,11 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: var(--hov-nav-contacts);
+    }
 }
 
 .current {

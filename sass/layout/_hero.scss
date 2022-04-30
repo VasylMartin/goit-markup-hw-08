@@ -14,6 +14,7 @@
     padding-right: 0;
 }
 
+//--===============================0-768px================================--//
 @media screen and (max-width: 767px) {
     .hero {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/Hero-img.jpg);
@@ -29,6 +30,7 @@
         }
 }
 
+//--===============================767px-1199px================================--//
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -45,6 +47,7 @@
     }
 }
 
+//--===============================1199px-``================================-- //
 @media screen and (min-width: 1199px) {
     .hero {
         padding-top: 200px;

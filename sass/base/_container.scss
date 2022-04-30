@@ -13,18 +13,21 @@
     margin-left: auto;
     }
 
+//--===============================0-768px================================--//
 @media screen and (min-width: 480px) {
     .container {
         width: 100vw;
     }
 }
 
+//--===============================767px-1199px================================--//
 @media screen and (min-width: 768px) {
     .container {
         width: 767px;
     }
 }
 
+//--===============================1199px-``================================-- //
 @media screen and (min-width: 1200px) {
     .container {
         width: 1199px;

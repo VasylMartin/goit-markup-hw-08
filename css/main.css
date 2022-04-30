@@ -1007,6 +1007,10 @@ body {
 }
 
 @media screen and (min-width: 1199px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .advantage-list__icons {
     width: 270px;
   }

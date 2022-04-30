@@ -73,19 +73,21 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100vw;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 767px;
+    display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1199px;
+    display: block;
   }
 }
 
@@ -902,6 +904,8 @@ body {
 
 .hero__section {
   width: 360px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media screen and (max-width: 767px) {

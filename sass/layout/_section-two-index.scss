@@ -62,6 +62,20 @@
     }
 }
 
+@media screen and (min-width: 1199px) {
+    .advantage-list__icons {
+        width: 270px;
+    }
+
+    .advantage-list__wrapper {
+        width: 270px;
+    }
+    
+    .advantage-list__item:not(:last-child) {
+        margin-right: 29px;
+    }
+}
+
 
 
 // .section {

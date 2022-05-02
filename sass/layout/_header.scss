@@ -236,6 +236,10 @@
 
 //--===============================1199px-``================================-- //
 @media screen and (min-width: 1199px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 
     .contact-list{
         display: flex;

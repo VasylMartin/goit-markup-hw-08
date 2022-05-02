@@ -13,10 +13,6 @@
 
 //--===============================0-768px================================--//
 @media screen and (max-width: 767px) {
-    .section {
-        background-color: var(--background-color-section-two);
-    }
-
     .advantage-list__icons {
         display: flex;
         align-items: center;

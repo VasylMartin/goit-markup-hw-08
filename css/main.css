@@ -942,6 +942,12 @@ body {
   padding-right: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .hero__section {
+    width: 320px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/Hero-img.jpg);

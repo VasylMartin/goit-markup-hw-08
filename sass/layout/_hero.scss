@@ -14,6 +14,12 @@
     padding-right: 0;
 }
 
+@media screen and (max-width: 479px) {
+    .hero__section {
+        width: 320px;
+    }
+}
+
 //--===============================0-768px================================--//
 @media screen and (max-width: 767px) {
     .hero {

@@ -1156,6 +1156,33 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .list-partners__link {
+    width: 226px;
+  }
+  .list-partners__logo:nth-child(-n +3) {
+    margin-bottom: 30px;
+  }
+  .list-partners__logo:nth-child(1), .list-partners__logo:nth-child(2), .list-partners__logo:nth-child(4), .list-partners__logo:nth-child(5) {
+    margin-right: 29px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .list-partners__link {
+    width: 170px;
+  }
+  .list-partners__logo:nth-child(-n +3) {
+    margin-bottom: 0;
+  }
+  .list-partners__logo:nth-child(1), .list-partners__logo:nth-child(2), .list-partners__logo:nth-child(4), .list-partners__logo:nth-child(5) {
+    margin-right: 0;
+  }
+  .list-partners__logo:not(:last-child) {
+    margin-right: 29px;
+  }
+}
+
 .one {
   padding-top: 6px;
   padding-right: 22px;

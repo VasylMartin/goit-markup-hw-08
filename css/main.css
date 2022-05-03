@@ -912,17 +912,55 @@ body {
   justify-content: center;
 }
 
-.footer-nav-address {
-  margin-bottom: 60px;
-}
-
-.social {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer-nav-address {
+    margin-bottom: 60px;
+  }
+  .social {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .follow-input {
     width: 450px;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .container-footer {
+    width: 602px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+  .container-footer {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-wrapper {
+    margin-bottom: 0;
+  }
+  .follow-input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+  .footer-nav-address {
+    margin-right: 70px;
+  }
+  .footer-wrapper {
+    margin-right: 93px;
+  }
+  .follow-footer {
+    flex-direction: row;
   }
 }
 

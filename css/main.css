@@ -443,6 +443,12 @@ body {
   transition: transform 250ms linear;
 }
 
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px;
+  }
+}
+
 .case-text {
   font-weight: 400;
   font-size: 16px;
@@ -1257,6 +1263,25 @@ body {
   margin-bottom: 40px;
 }
 
+.card-list {
+  display: block;
+}
+
+.cases {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   .btn-list-item:not(:last-child) {
     margin-right: 8px;
@@ -1266,13 +1291,29 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .btn-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .btn-list {
+    justify-content: center;
+  }
+  .card-list-item {
+    width: 354px;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .first-case {
+    padding-bottom: 56px;
+  }
+}
+
 .market {
   padding-top: 90px;
   padding-bottom: 98px;
-}
-
-.card-list {
-  display: block;
 }
 
 .card-list-item-wrapper {
@@ -1291,20 +1332,5 @@ body {
 
 .card-list-item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.cases {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
-.wrapper {
-  position: relative;
-  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

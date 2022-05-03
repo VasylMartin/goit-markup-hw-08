@@ -1093,6 +1093,10 @@ body {
   .advantage-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .advantage-list__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
   }
   .advantage-list__icons {
     display: flex;
@@ -1107,9 +1111,6 @@ body {
   .advantage-list__wrapper {
     width: 354px;
   }
-  .advantage-list__item:not(:nth-child(2n)) {
-    margin-right: 29px;
-  }
 }
 
 @media screen and (min-width: 1199px) {
@@ -1122,9 +1123,6 @@ body {
   }
   .advantage-list__wrapper {
     width: 270px;
-  }
-  .advantage-list__item:not(:last-child) {
-    margin-right: 29px;
   }
 }
 

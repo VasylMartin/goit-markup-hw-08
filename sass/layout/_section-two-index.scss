@@ -38,6 +38,11 @@
     .advantage-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
     }
 
     .advantage-list__icons {
@@ -55,9 +60,6 @@
         width: 354px;
     }
 
-    .advantage-list__item:not(:nth-child(2n)) {
-        margin-right: 29px;
-    }
 }
 
 //--===============================1199px-``================================-- //
@@ -75,7 +77,4 @@
         width: 270px;
     }
     
-    .advantage-list__item:not(:last-child) {
-        margin-right: 29px;
-    }
 }

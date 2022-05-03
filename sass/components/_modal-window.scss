@@ -21,8 +21,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--mtitle-hovbtn);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -58,7 +58,7 @@
 }
 
 .modal-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -85,7 +85,7 @@
 
 .modal-message {
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -128,8 +128,8 @@
     text-decoration: underline;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.166;
     letter-spacing: 0.03em;
     color: var(--hov-nav-contacts);
 }
@@ -137,8 +137,8 @@
 .contact-form-checkbox-label {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.166;
     letter-spacing: 0.03em;
     color: var(--text);
     cursor: pointer;
@@ -175,4 +175,33 @@
     align-items: center;
     margin-bottom: 30px;
     justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-form-checkbox-label {
+        display: block;
+    }
+}
+
+//--===============================1199px-``================================-- //
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+
+    .contact-form-checkbox-label {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .modal-link {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }

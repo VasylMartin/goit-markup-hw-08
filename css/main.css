@@ -435,7 +435,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--mtitle-hovbtn);
   overflow: auto;
@@ -1272,8 +1272,7 @@ body {
 }
 
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .card-list-item-wrapper {
@@ -1290,11 +1289,7 @@ body {
   transform: translateY(0%);
 }
 
-.card-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.card-list-item:not(:nth-last-child(-n + 3)) {
+.card-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 

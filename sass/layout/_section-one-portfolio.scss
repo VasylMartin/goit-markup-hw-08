@@ -1,42 +1,62 @@
-.one {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    min-width: 73px;
+// .one {
+//     padding-top: 6px;
+//     padding-right: 22px;
+//     padding-bottom: 6px;
+//     padding-left: 22px;
+//     min-width: 73px;
+// }
+
+// .two {
+//     padding-top: 6px;
+//     padding-right: 22px;
+//     padding-bottom: 6px;
+//     padding-left: 22px;
+//     min-width: 128px;
+// }
+
+// .three {
+//     padding-top: 6px;
+//     padding-right: 22px;
+//     padding-bottom: 6px;
+//     padding-left: 22px;
+//     min-width: 145px;
+// }
+
+// .four {
+//     padding-top: 6px;
+//     padding-right: 22px;
+//     padding-bottom: 6px;
+//     padding-left: 22px;
+//     min-width: 103px;
+// }
+
+// .five {
+//     padding-top: 6px;
+//     padding-right: 22px;
+//     padding-bottom: 6px;
+//     padding-left: 22px;
+//     min-width: 130px;
+// }
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
-.two {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    min-width: 128px;
+@media screen and (max-width: 767px) {
+    .btn-list-item {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        &:nth-child(-n + 3) {
+            margin-bottom: 15px;
+        }
+    }
 }
 
-.three {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    min-width: 145px;
-}
-
-.four {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    min-width: 103px;
-}
-
-.five {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    min-width: 130px;
-}
 
 .market {
     padding-top: 90px;

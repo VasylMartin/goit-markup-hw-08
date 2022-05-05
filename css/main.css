@@ -640,8 +640,8 @@ body {
 
 @media screen and (max-width: 479px) {
   .modal {
-    width: 100%;
-    height: 100%;
+    width: 96%;
+    height: auto;
   }
   .contact-form-checkbox-label {
     display: block;
@@ -689,7 +689,7 @@ body {
   color: var(--hov-nav-contacts);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .nav-list {
     display: none;
   }
@@ -709,7 +709,7 @@ body {
   }
   .mobile-menu {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -766,6 +766,9 @@ body {
   .mobile-menu__nav-list-link:hover, .mobile-menu__nav-list-link:focus {
     color: var(--hov-nav-contacts);
   }
+  .mobile-menu__curent-link {
+    color: var(--hov-nav-contacts);
+  }
   .mobile-menu__contact-list {
     margin-bottom: 64px;
   }
@@ -779,6 +782,10 @@ body {
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--hov-nav-contacts);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu__contact-list-link-tel:hover, .mobile-menu__contact-list-link-tel:focus {
+    color: var(--text);
   }
   .mobile-menu__contact-list-link-email {
     font-style: normal;
@@ -794,6 +801,7 @@ body {
   }
   .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   .mobile-menu__social-list-link {
@@ -804,6 +812,10 @@ body {
     letter-spacing: 0.02em;
     color: var(--hov-nav-contacts);
     margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu__social-list-link:hover, .mobile-menu__social-list-link:focus {
+    color: var(--text);
   }
   .mobile-menu__socila-list-item:not(:last-child)::after {
     content: '';
@@ -832,6 +844,8 @@ body {
   }
   .logo {
     margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .nav-list__item:not(:last-child) {
     margin-right: 50px;
@@ -855,18 +869,34 @@ body {
     color: var(--hov-nav-contacts);
     fill: var(--hov-nav-contacts);
   }
+  .contact-list__link-mail {
+    padding-top: 21px;
+  }
+  .contact-list__link-tel {
+    padding-bottom: 21px;
+  }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1199.98px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
   }
   .contact-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contact-list__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .contact-list__link-mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contact-list__link-tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -943,11 +973,12 @@ body {
   justify-content: center;
 }
 
+.footer-wrapper {
+  margin-bottom: 60px;
+}
+
 @media screen and (max-width: 767px) {
   .footer-nav-address {
-    margin-bottom: 60px;
-  }
-  .social {
     margin-bottom: 60px;
   }
 }
@@ -960,7 +991,6 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 60px;
   }
   .container-footer {
     width: 602px;
@@ -978,6 +1008,7 @@ body {
   }
   .footer-wrapper {
     margin-bottom: 0;
+    margin-right: auto;
   }
   .follow-input {
     width: 358px;
@@ -986,9 +1017,6 @@ body {
   }
   .footer-nav-address {
     margin-right: 70px;
-  }
-  .footer-wrapper {
-    margin-right: 93px;
   }
   .follow-footer {
     flex-direction: row;
@@ -1043,6 +1071,9 @@ body {
 
 @media screen and (min-width: 1199px) {
   .hero {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero/Hero-img.jpg);
@@ -1071,14 +1102,16 @@ body {
   color: var(--text);
 }
 
+.advantage-list__icons {
+  height: 120px;
+}
+
 @media screen and (max-width: 767px) {
   .advantage-list__icons {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bcg-btn);
-    padding-top: 25px;
-    padding-bottom: 25px;
     border-radius: 4px;
     margin-bottom: 30px;
   }
@@ -1104,7 +1137,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 354px;
-    height: 120px;
     background-color: var(--bcg-btn);
     border-radius: 4px;
     margin-bottom: 30px;

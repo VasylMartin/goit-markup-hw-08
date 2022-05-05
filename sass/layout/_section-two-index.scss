@@ -11,6 +11,10 @@
     color: var(--text);
 }
 
+.advantage-list__icons {
+    height: 120px;
+}
+
 //--===============================0-768px================================--//
 @media screen and (max-width: 767px) {
     .advantage-list__icons {
@@ -18,8 +22,6 @@
         align-items: center;
         justify-content: center;
         background-color: var(--bcg-btn);
-        padding-top: 25px;
-        padding-bottom: 25px;
         border-radius: 4px;
         margin-bottom: 30px;
     }
@@ -50,7 +52,6 @@
         justify-content: center;
         align-items: center;
         width: 354px;
-        height: 120px;
         background-color: var(--bcg-btn);
         border-radius: 4px;
         margin-bottom: 30px;

@@ -93,10 +93,13 @@
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
     
     .mobile-menu__nav-list {
-        margin-bottom: 302px;
+        margin-bottom: auto;
     }
     
     .mobile-menu__nav-list-item:not(:last-child) {
